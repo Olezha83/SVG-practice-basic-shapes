@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>training site</title>
+  </head>
+  <body>
+    <h1>Basic shapes of&nbsp;SVG</h1>
+    <div class="container">
+      <div>
+        <h2>Rectantle</h2>
+        <svg>
+          <rect x="75" y="50" rx="50" ry="20" />
+        </svg>
+      </div>
+
+      <div>
+        <h2>Circle</h2>
+        <svg>
+          <circle r="60" cx="50%" cy="50%" />
+        </svg>
+      </div>
+
+      <div>
+        <h2>Ellipse</h2>
+        <svg>
+          <defs>
+            <linearGradient id="myGradient" x1="1" y1="0" x2="0" y2="1">
+              <stop class="stop1" offset="0"></stop>
+              <stop class="stop2" offset="50%"></stop>
+              <stop class="stop3" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <ellipse rx="70" ry="35" cx="28%" cy="25%" />
+          <ellipse rx="60" ry="30" cx="43%" cy="40%" />
+          <ellipse rx="50" ry="25" cx="58%" cy="55%" />
+          <ellipse rx="40" ry="20" cx="73%" cy="70%" />
+          <ellipse rx="30" ry="15" cx="85%" cy="82%" />
+        </svg>
+      </div>
+
+      <div>
+        <h2>Line</h2>
+        <svg>
+          <line class="eyes" x1="40" x2="110" y1="40" y2="40" />
+          <line class="eyes" x1="190" x2="260" y1="40" y2="40" />
+          <line class="nose" x1="50%" y1="70" x2="50%" y2="120" />
+          <line class="teeth" x1="60" y1="165" x2="240" y2="165" />
+        </svg>
+      </div>
+
+      <div>
+        <h2>Polyline + Polygon</h2>
+        <svg>
+          <polygon class="roof" points="35, 60 60, 20 240, 20 265, 60" />
+          <polyline class="wall" points="60, 60 60, 180 240, 180 240, 60" />
+          <polygon class="window" points="115, 140 115, 90 185, 90 185, 140" />
+          <line class="frame" x1="50%" y1="90" x2="50%" y2="110" />
+          <line class="frame" x1="115" y1="110" x2="185" y2="110" />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>

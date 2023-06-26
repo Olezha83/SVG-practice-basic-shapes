@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 60px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-style: italic;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+}
+
+svg {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 300px;
+  height: 200px;
+  margin: 10px 0;
+}
+
+rect {
+  width: 150px;
+  height: 100px;
+  stroke: #956328;
+  fill: #ffebcd;
+  stroke-width: 4px;
+}
+
+circle {
+  fill: #296ac0;
+  stroke: rgb(107, 190, 163);
+  stroke-width: 64px;
+  stroke-dasharray: 10 15;
+}
+
+.stop1,
+.stop3 {
+  stop-color: #00008b;
+}
+
+.stop2 {
+  stop-color: #87ceeb57;
+}
+
+ellipse {
+  fill: url(#myGradient);
+}
+
+.eyes {
+  stroke: #41972a;
+  stroke-width: 30px;
+  stroke-linecap: round;
+}
+
+.nose {
+  stroke: #9b6628c4;
+  stroke-width: 18px;
+  stroke-linecap: round;
+}
+
+.teeth {
+  stroke: #c1c16b;
+  stroke-width: 8px;
+  stroke-dasharray: 30, 7;
+}
+
+polygon,
+polyline,
+line {
+  fill: none;
+  stroke: #d2691e;
+  stroke-width: 5px;
+}
+
+.frame {
+  stroke-width: 2px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
